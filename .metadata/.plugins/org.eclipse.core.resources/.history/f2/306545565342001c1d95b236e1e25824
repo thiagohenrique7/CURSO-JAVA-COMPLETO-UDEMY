@@ -1,0 +1,36 @@
+package oodesafio;
+
+public class Ferrari extends Carro{
+//	@Override
+//	protected void acelerar() {
+//		super.acelerar();
+//		super.acelerar();
+//		super.acelerar();
+//	}
+//	
+//	@Override
+//	protected void frear() {
+//		super.frear();
+//		super.frear();
+//		super.frear();
+//	}
+	Ferrari(){
+		this(300);
+	}
+	Ferrari(int velocidadeMax){
+		super(velocidadeMax);
+		this.delta = 15;
+	}
+	
+//	@Override
+//		protected void acelerar() {
+//			
+//			this.velocidadeAtual += 15;
+//		}
+//	
+//@Override
+//	protected void acelerar() {
+//		// TODO Auto-generated method stub
+//		super.acelerar();
+//	}
+}

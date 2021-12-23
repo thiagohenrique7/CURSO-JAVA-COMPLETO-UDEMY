@@ -1,0 +1,27 @@
+package oodesafio;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Carro c1 = new Civic();
+		Carro b1 = new Bmw();
+		Carro f1 = new Ferrari();
+		
+		c1.acelerar();
+		b1.acelerar();
+		f1.acelerar();
+		
+		c1.frear();
+		b1.frear();
+		f1.frear();
+		c1.frear();
+		b1.frear();
+		f1.frear();
+		
+		System.out.println(c1);
+		System.out.println(b1);
+		System.out.println(f1);
+
+	}
+
+}

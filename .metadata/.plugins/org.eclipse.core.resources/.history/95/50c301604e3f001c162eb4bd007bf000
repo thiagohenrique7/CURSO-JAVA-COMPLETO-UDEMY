@@ -1,0 +1,8 @@
+package polimorfismo;
+
+import oocomposicao.Carro;
+
+public class civic extends carro  {
+	Carro c = new Civic();
+
+}

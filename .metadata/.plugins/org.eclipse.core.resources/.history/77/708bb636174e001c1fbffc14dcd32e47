@@ -1,0 +1,18 @@
+package lambdas;
+
+import java.util.function.BiFunction;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		Produto p = new Produto ("iPad",3235.89,0.13);
+		BiFunction<Double,Double,Double> precoComDesconto = 
+				(preco,desconto) -> {
+					double descontoFinal = preco*desconto;
+					return preco-descontoFinal;
+				};
+				
+			System.out.println(precoComDesconto.apply(p.preco,p.desconto));
+	}
+
+}

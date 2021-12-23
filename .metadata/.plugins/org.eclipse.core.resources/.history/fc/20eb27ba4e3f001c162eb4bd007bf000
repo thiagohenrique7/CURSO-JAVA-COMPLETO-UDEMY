@@ -1,0 +1,10 @@
+package polimorfismo;
+
+public class polimorfismoDinamico {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

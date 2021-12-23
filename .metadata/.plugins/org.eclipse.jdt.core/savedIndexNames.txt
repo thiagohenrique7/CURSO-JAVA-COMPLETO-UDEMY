@@ -1,0 +1,11 @@
+INDEX VERSION 1.131+D:\CURSO JAVA COMPLETO - UDEMY\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+687694515.index
+967810169.index
+2820557769.index
+75931715.index
+2493184552.index
+3654592591.index
+1432284277.index
+935734548.index
+1977880739.index

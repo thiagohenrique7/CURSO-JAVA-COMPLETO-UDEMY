@@ -1,0 +1,38 @@
+package oodesafio;
+
+public class Carro {
+	final int VELOCIDADE_MAXIMA;
+	int velocidadeAtual =0;
+	int delta = 5;
+	
+	Carro(int velocidadeMaxima){
+		this.VELOCIDADE_MAXIMA = velocidadeMaxima;
+	}
+	Carro(){
+		
+	}
+	
+	protected void acelerar() {
+		if(velocidadeAtual + delta > VELOCIDADE_MAXIMA) {
+			velocidadeAtual = VELOCIDADE_MAXIMA;
+		}else {
+		this.velocidadeAtual += delta;
+		}
+		}
+		
+	protected void frear () {
+		if(this.velocidadeAtual>0 && this.velocidadeAtual<=5) {
+		this.velocidadeAtual -= this.velocidadeAtual;
+		}
+		else if(this.velocidadeAtual>5) {
+			this.velocidadeAtual -= 5;
+		}else {
+			System.out.println("Carro parado!");
+		}
+	}
+	
+	public String toString() {
+		return "Velocidade atual é: " +velocidadeAtual + "KM/H";
+	}
+
+}

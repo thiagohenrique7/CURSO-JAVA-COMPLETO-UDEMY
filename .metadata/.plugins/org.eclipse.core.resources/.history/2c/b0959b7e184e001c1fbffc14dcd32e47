@@ -1,0 +1,43 @@
+package lambdas;
+
+import java.util.function.DoubleBinaryOperator;
+import java.util.function.UnaryOperator;
+
+public class Desafio {
+
+	public static void main(String[] args) {
+		Produto p = new Produto ("iPad",3235.89,0.13);
+		DoubleBinaryOperator precoComDesconto = 
+				(preco,desconto) -> {
+					double descontoFinal = preco*desconto;
+					return preco-descontoFinal;
+				};
+				
+	System.out.println(precoComDesconto.applyAsDouble
+			(p.preco,p.desconto));
+	
+		UnaryOperator<Double> imposto = 
+				preco -> preco>=2500?preco*0.085:preco;
+
+	
+	System.out.println(imposto.apply(p.preco));
+	
+//	BinaryOperator <Double> precoComDesconto = 
+//			(preco,desconto) -> {
+//				double descontoFinal = preco*desconto;
+//				return preco-descontoFinal;
+//			};
+//			
+//System.out.println(precoComDesconto.apply
+//		(p.preco,p.desconto));	
+				
+//		BiFunction<Double,Double,Double> precoComDesconto = 
+//				(preco,desconto) -> {
+//					double descontoFinal = preco*desconto;
+//					return preco-descontoFinal;
+//				};
+//				
+//			System.out.println(precoComDesconto.apply(p.preco,p.desconto));
+	}
+
+}

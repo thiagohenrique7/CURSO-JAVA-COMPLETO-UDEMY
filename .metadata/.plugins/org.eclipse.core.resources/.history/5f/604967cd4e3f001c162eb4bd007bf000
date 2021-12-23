@@ -1,0 +1,11 @@
+package polimorfismo;
+
+public class polimorfismoDinamico {
+
+	public static void main(String[] args) {
+		carro c = new civic();
+		c = new ferrari();
+		c.escrever();
+	}
+
+}
